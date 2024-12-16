@@ -2,23 +2,21 @@
 
 namespace ChallengeApp
 {
-    public class Employee
+    public class User
     {
-        private List<int> score = new List<int>();
-
-        public Employee(string name , string surename , int age)
+        List<int> score = new List<int>();
+        public User(string name, string surename, int age)
         {
             this.Name = name;
-            this.Surename = surename;
+            this.SureName = name;
             this.Age = age;
-        }
-            
-        
 
+        }
         public string Name { get; private set; }
-        public string Surename { get; private set; }
+        public string SureName { get; private set; }
 
         public int Age { get; private set; }
+        
 
 
         public int Result
@@ -33,8 +31,8 @@ namespace ChallengeApp
         {
             this.score.Add(number);
         }
+
     }
-   
 }
 
 

@@ -1,24 +1,28 @@
-﻿namespace ChallengeApp.Tests
+﻿using ChallengeApp;
+
+namespace ChallengeApp.Tests
 {
     public class Tests
     {
-       
+
 
         [Test]
         public void Test1()
         {
-            // arrange
-            int age1 = 10;
-            int age2 = 3;
 
+
+            //arrange
+            int var1 = 10;
+            int var2 = 20;
 
             // act
-            int result = age1 + age2;
+
+            int result = var1 + var2;
 
             // assert
 
-            Assert.Equals(13 , result);
-
+            Assert.(30 , result);
         }
+
     }
-}
+}                                                                                                                       

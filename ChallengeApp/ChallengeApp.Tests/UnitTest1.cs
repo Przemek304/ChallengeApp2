@@ -1,28 +1,25 @@
-﻿using ChallengeApp;
-
-namespace ChallengeApp.Tests
+﻿namespace ChallengeApp.Tests
 {
     public class Tests
     {
-
+       
 
         [Test]
         public void Test1()
         {
-
-
             //arrange
-            int var1 = 10;
-            int var2 = 20;
 
-            // act
+            int number1 = 5;
+            int number2 = 10;
+            
+            //act
 
-            int result = var1 + var2;
+            int result = number1 + number2;
 
-            // assert
+            //assert
 
-            Assert.(30 , result);
+            Assert.(number1, number2);
+            
         }
-
     }
-}                                                                                                                       
+}

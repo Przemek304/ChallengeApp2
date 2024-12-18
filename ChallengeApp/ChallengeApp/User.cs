@@ -1,38 +1,30 @@
 ﻿
-
 namespace ChallengeApp
 {
     public class User
     {
-        List<int> score = new List<int>();
-        public User(string name, string surename, int age)
+        List<float> grades = new List<float>();
+        public User(string name, string surename)
         {
             this.Name = name;
-            this.SureName = name;
-            this.Age = age;
-
+            this.Surename = surename;
         }
+
+
         public string Name { get; private set; }
-        public string SureName { get; private set; }
+        public string Surename { get; private set; }
 
-        public int Age { get; private set; }
-        
-
-
-        public int Result
+        public float Result
         {
             get
             {
-                return this.score.Sum();
+                return this.grades.Sum();
             }
         }
-
-        public void AddScore(int number)
+        public void AddGrade(float grade)
         {
-            this.score.Add(number);
+            this.grades.Add(grade);   
         }
 
     }
 }
-
-

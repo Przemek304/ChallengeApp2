@@ -1,16 +1,19 @@
 ﻿using ChallengeApp;
 
-User user1 = new User("Adam1", "Kowalksa", 20);
-User user2 = new User("Paweł", "Kowlaski", 23);
-User user3 = new User("Zuzia", "Kowalska", 22);
-user1.AddScore(5);
-user1.AddScore(3);
-user1.AddScore(5);
+var employee = new Employee("Adam", "Kamizelich");
+employee.AddGrade(2);
+employee.AddGrade(2);
+employee.AddGrade(6);
 
-user2.AddScore(5);
-user2.AddScore(1);
-user2.AddScore(5);
+var statistics = employee.GetStatistics();
 
-user3.AddScore(5);
-user3.AddScore(2);
-user3.AddScore(7);
+Console.WriteLine($"Average: {statistics.Average:N2} ");
+Console.WriteLine($"Min: {statistics.Min} ");
+Console.WriteLine($"Max: {statistics.Max} ");
+
+SetSth(out statistics);
+
+void SetSth(out Statistics statistics)
+{
+    statistics = new Statistics();
+}

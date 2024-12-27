@@ -4,11 +4,18 @@ namespace ChallengeApp
     public class User
     {
         List<float> grades = new List<float>();
+        public User(string name)
+        {
+            this.Name = name;
+        }
+
+
         public User(string name, string surename)
         {
             this.Name = name;
             this.Surename = surename;
         }
+       
 
 
         public string Name { get; private set; }
